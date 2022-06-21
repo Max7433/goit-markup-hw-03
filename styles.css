@@ -37,11 +37,20 @@ img {
 
 a {
     text-decoration: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .list {
     list-style: none;
     margin: 0px;
+    padding: 0px;
+}
+
+.container.section.main-nav {
+    display: flex;
+    align-items: baseline;
+
 }
 
 /* div container styles */
@@ -55,33 +64,37 @@ a {
     padding-right: 15px;
 }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+/* .section {
+
+} */
 
 /* header */
 .header {
     background-color: var(--backgroundcolor-header);
 }
 
+
 /* logo style */
 .logo {
+    display: inline-block;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--fontcolor-secondary);
+    align-items: center;
 }
 
 .logo-web {
+    display: inline-block;
     color: var(--accent-color);
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    align-items: center;
 }
 
 .logo:hover,
@@ -96,19 +109,34 @@ a {
 }
 
 /* header flex */
+.container.section.main-nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .header-nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list.header-nav .item.logo {
+    margin-right: 93px;
 }
 
 .header-nav .item:not(:last-child) {
     margin-right: 50px;
 }
 
-/* .container .section {
-    justify-content: space-between;
-} */
+
+.list.header-nav.adress {
+    margin-left: auto;
+}
 
 .list-link {
+    display: block;
+    padding-bottom: 30px;
+    padding-top: 30px;
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
@@ -123,6 +151,9 @@ a {
 }
 
 .site-nav {
+    display: block;
+    padding-bottom: 30px;
+    padding-top: 30px;
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
@@ -137,11 +168,16 @@ a {
 }
 
 /* section hero */
+.hero.section {
+    height: 600px;
+}
+
 .hero {
     background-color: var(--backroundcolor-secondari);
 }
 
 .hero-title {
+    padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
