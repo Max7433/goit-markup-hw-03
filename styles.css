@@ -324,8 +324,8 @@ a {
     margin-bottom: 0px;
 }
 
-.card-data {
-    border: 1px #212121;
+.card-data .card-name.card-text {
+    padding-right: 24px;
 }
 
 .card-name {
