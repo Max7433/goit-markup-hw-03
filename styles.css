@@ -42,7 +42,8 @@ a {
     padding: 0px;
 }
 
-.list {
+.list,
+.list-card {
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -52,7 +53,7 @@ a {
 .container {
     display: block;
     /* outline: 2px solid #2196f3; */
-    width: 1200px;
+    width: 1230px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -67,6 +68,7 @@ a {
 /* header */
 .header {
     background-color: var(--backgroundcolor-header);
+    border-bottom: 1px #ECECEC;
 }
 
 
@@ -294,11 +296,18 @@ a {
 .team-article {
     margin-top: 30px;
     margin-bottom: 30px;
+    border: 2px navy;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 /* Portfolio card  */
+
+.work.container.section .list-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card-link {
     background-color: var(--backgroundcolor-header);
 }
@@ -320,8 +329,24 @@ a {
 }
 
 /* buttons */
+.container.section.filter .list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.container.section.filter {
+    padding-bottom: 50px;
+}
+
+.container.section.filter .list .item:not(:last-child) {
+    margin-right: 8px;
+}
+
+
 .button {
-    display: inline-block;
+    display: block;
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -344,6 +369,10 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    border: 0px;
+    border-radius: 4px;
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
