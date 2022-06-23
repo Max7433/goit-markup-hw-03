@@ -190,12 +190,10 @@ section {
     justify-content: stretch;
 }
 
-.peculiarities .container .list .item {
-    margin-right: 30px;
-}
 
-.peculiarities .container .list .item:nth-child(:last-child) {
-    margin-right: 0px;
+
+.peculiarities .container .list .item:not(:last-child) {
+    margin-right: 30px;
 }
 
 
@@ -221,16 +219,20 @@ section {
 }
 
 /* < !-- What are we doing --> */
+section.doing {
+    padding-top: 0;
 
-.doing.container.section .list {
+}
+
+section.doing .container .list {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0px;
-    justify-content: stretch;
 }
 
-.doing.container.section>.list>.item:not(:last-child) {
+
+
+.doing .container .list .item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -246,19 +248,18 @@ section {
 }
 
 /* team */
-.team.container.section .list {
+section.team .container .list {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    justify-content: stretch;
 }
 
-.team.container.section>.list>.team-card:not(:last-child) {
+section.team .container .list .team-card:not(:last-child) {
     margin-right: 30px;
 }
 
 .team {
-    background-color: var(--backroundcolor-main);
+    background-color: #F5F4FA
 }
 
 .team-headlines {
@@ -276,6 +277,7 @@ section {
 }
 
 .tc-head {
+    padding-top: 30px;
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
@@ -286,6 +288,7 @@ section {
 }
 
 .team-skill {
+    padding-bottom: 30px;
     color: var(--fontcolor-main);
     font-size: 16px;
     line-height: 1.2;
@@ -293,11 +296,8 @@ section {
 }
 
 .team-article {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: 2px navy;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* Portfolio card  */
