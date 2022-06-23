@@ -41,8 +41,8 @@ a {
     padding: 0px;
 }
 
-.list,
-.list-card {
+ul,
+li {
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -65,7 +65,7 @@ section {
 /* header */
 .header {
     background-color: var(--backgroundcolor-header);
-    border-bottom: 1px #ECECEC;
+    border: 1px solid #ECECEC;
 }
 
 
@@ -405,18 +405,27 @@ section.team .container .list .team-card:not(:last-child) {
 }
 
 /* footer */
-.footer.container.section {
+.footer {
+    display: block;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-right: 215px;
-}
-
-.footer {
     background-color: var(--backroundcolor-secondari);
 }
 
+.footer .container .address .list {
+    padding-right: 0px;
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.footer .container .address .list:not(:last-child) {
+    margin-bottom: 9px;
+
+}
+
 .footer-logo {
-    margin-bottom: 20px;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -447,8 +456,6 @@ section.team .container .list .team-card:not(:last-child) {
 }
 
 .footer-nav {
-    margin-top: 9px;
-    margin-bottom: 9px;
     font-family: Roboto;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -457,7 +464,6 @@ section.team .container .list .team-card:not(:last-child) {
 }
 
 .footer-gmaps {
-    margin-bottom: 9px;
     font-family: inherit;
     line-height: 1.2;
     letter-spacing: 0.02em;
